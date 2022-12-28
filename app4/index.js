@@ -36,7 +36,7 @@ var LinkedList = /** @class */ (function () {
     return LinkedList;
 }());
 function menu() {
-    console.log("\nPress\n1.Insert Value\n2.Delete Value\n3.Print List\n4.Exit\n\n");
+    console.log("\nPress\n1.Insert Value\n2.Print List\n3.Exit\n\n");
 }
 var quit = false;
 var list = new LinkedList();
@@ -48,12 +48,11 @@ while (!quit) {
         list.insert(number);
     }
     else if (choice === 2) {
+        console.log("\nLinked List Data:");
+        list.print();
+        console.log("\n");
     }
     else if (choice === 3) {
-        console.log("Linked List Data:");
-        list.print();
-    }
-    else if (choice === 4) {
         quit = true;
     }
 }
